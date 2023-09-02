@@ -10,7 +10,6 @@
         <recipeUsers>
             <li>BreadOven</li>
         </recipeUsers>
-
         <temperatureSafe>
             <min>-275</min>
             <max>1000</max>

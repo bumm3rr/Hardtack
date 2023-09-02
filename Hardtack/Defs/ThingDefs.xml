@@ -17,6 +17,7 @@
         <statBases>
             <DeteriorationRate>10</DeteriorationRate>
             <MarketValue>2</MarketValue>
+            <!-- Not sure if WorkToMake is needed if it's only made via a UF recipe? -->
             <WorkToMake>300</WorkToMake>
             <Bulk>0.05</Bulk>
             <Mass>0.018</Mass>
