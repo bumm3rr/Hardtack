@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <!-- inspectorTabs makes this file look for something to allow a fueld UF to be possible? -->
+    <ThingDef Name="UniversalFermenterFueled" ParentName="UniversalFermenterBase" Abstract="True">
+        <inspectorTabs>
+            <li>SK.ITab_Fuel</li>
+        </inspectorTabs>
+    </ThingDef>
+
+    <!-- Hardtack Oven -->
+    <ThingDef ParentName="UniversalFermenterFueled" Class="UniversalFermenterSK.ThingDef_UF">
+    <defName>BreadOven</defName>
+    <label>Bread Oven</label>
+    <description>A special oven made specifically for making large batches of bread that need cooking at low temperatures.</description>
+    <thingClass>UniversalFermenterSK.Building_UF</thingClass>
+    <graphicData>
+        <texPath>Things/Building/BreadOven</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(2,2)</drawSize>
+        <!-- <shaderType></shaderType> -->
+        <!-- <shadowData></shadowData> -->
+        <damageData>
+            <rect>(0.05,0.1,0.9,0.9)</rect>
+        </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+        <li>BuildingsProduction</li>
+    </thingCategories>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <stuffCategories>
+        <li>Stony</li>
+        <li>Bricks</li>
+    </stuffCategories>
+    <costStuffCount>120</costStuffCount>
+    <fillPercent>0.01</fillPercent>
+    <pathCost>60</pathCost>
+    <statBases>
+        <WorkToBuild>1000</WorkToBuild>
+        <MaxHitPoints>200</MaxHitPoints>
+        <Flammability>0</Flammability>
+        <Cleanliness>0</Cleanliness>
+        <Mass>400</Mass>
+    </statBases>
+    <size>(2,2)</size>
+    <showProductIcon>true</showProductIcon>
+    <barOffset>(0.0, 0.25)</barOffset>
+    <barScale>(1.0, 1.0)</barScale>
+    <slotsCount>4</slotsCount>
+    <comps>
+        <li Class="CompProperties_Forbiddable"/>
+        <li Class="CompProperties_Flickable"/>
+        <li Class="SK.CompProperties_HeatPusherAdvanced">
+            <compClass>SK.CompHeatPusherAdvanced</compClass>
+            <heatPerSecond>5</heatPerSecond>
+            <heatPushMaxTemperature>30</heatPushMaxTemperature>
+        </li>
+        <li Class="CompProperties_Glower">
+            <glowRadius>3</glowRadius>
+            <glowColor>(220,150,100,0)</glowColor>
+        </li>
+        <li Class="SK.CompFueled_Properties">
+            <operatingTemp>300</operatingTemp>
+            <drawfirefuel>false</drawfirefuel>
+            <fireDrawOffset>(0,0.1,-0.65)</fireDrawOffset>
+            <fuelDrawOffset>(0,0.1,-0.8)</fuelDrawOffset>
+            <fuelCapacity>20</fuelCapacity>
+            <burnFuelMultiplier>0.5</burnFuelMultiplier>
+            <effectOnWeather>false</effectOnWeather>
+            <fuelFilter>
+                <thingDefs>
+                    <li>Kindling</li>
+                </thingDefs>
+                <categories>
+                    <li>Wooden</li>
+                </categories>
+            </fuelFilter>
+        </li>
+    </comps>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+    <designationCategory>Production</designationCategory>
+    <researchPrerequisites>
+        <li>Bakery_B1</li>
+    </researchPrerequisites>
+    </ThingDef>
+</Defs>

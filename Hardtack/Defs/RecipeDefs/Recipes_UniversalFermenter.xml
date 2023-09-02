@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+    <RecipeDef Name="Make_HardtackBase" Class="UniversalFermenterSK.RecipeDef_UF" Abstract="True">
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Flour</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <recipeUsers>
+            <li>BreadOven</li>
+        </recipeUsers>
+
+        <temperatureSafe>
+            <min>-275</min>
+            <max>1000</max>
+        </temperatureSafe>
+        <temperatureIdeal>
+            <min>-275</min>
+            <max>1000</max>
+        </temperatureIdeal>
+        <processDays>0.25</processDays>
+        <speedBelowSafe>0</speedBelowSafe>
+        <speedAboveSafe>0</speedAboveSafe>
+    </RecipeDef>
+
+    <RecipeDef ParentName="Make_HardtackBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Make_Hardtack</defName>
+        <label>Make Hardtack</label>
+        <description>Bake some hardtack</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Flour</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Salt</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <products>
+            <Hardtack>10</Hardtack>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="Make_HardtackBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Make_Hardtack_x4</defName>
+        <label>Make Hardtack x4</label>
+        <description>Bake some hardtack x4</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Flour</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Salt</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+        </ingredients>
+        <products>
+            <Hardtack>40</Hardtack>
+        </products>
+        <slotsRequired>4</slotsRequired>
+    </RecipeDef>
+
+    <RecipeDef ParentName="Make_HardtackBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Make_Twice_Baked_Hardtack</defName>
+        <label>Make Twice Baked Hardtack</label>
+        <description>Bake some twice baked hardtack</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Hardtack</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <products>
+            <TwiceBakedHardtack>10</TwiceBakedHardtack>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="Make_HardtackBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Make_Twice_Baked_Hardtack_x4</defName>
+        <label>Make Twice Baked Hardtack x4</label>
+        <description>Bake some twice baked hardtack x4</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Hardtack</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+
+        </ingredients>
+        <products>
+            <TwiceBakedHardtack>40</TwiceBakedHardtack>
+        </products>
+        <slotsRequired>4</slotsRequired>
+    </RecipeDef>
+
+    <RecipeDef ParentName="Make_HardtackBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Make_Thrice_Baked_Hardtack</defName>
+        <label>Make Thrice Baked Hardtack</label>
+        <description>Bake some Thrice baked hardtack</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>TwiceBakedHardtack</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <products>
+            <ThriceBakedHardtack>10</ThriceBakedHardtack>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="Make_HardtackBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Make_Thrice_Baked_Hardtack_x4</defName>
+        <label>Make Thrice Baked Hardtack x4</label>
+        <description>Bake some Thrice baked hardtack x4</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>TwiceBakedHardtack</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <products>
+            <ThriceBakedHardtack>40</ThriceBakedHardtack>
+        </products>
+        <slotsRequired>4</slotsRequired>
+    </RecipeDef>
+    
+</Defs>

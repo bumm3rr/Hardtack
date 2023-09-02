@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ModMetaData>
+    <name>Hardtack</name>
+    <author>bumm3r</author>
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+    <packageId>bumm3r.Hardtack</packageId>
+    <description>A simple mod that adds hardtack that is made using a special oven that works as a fermenter from UF</description>
+    <modDependencies>
+        <li>
+            <packageId>skyarkhangel.HSK</packageId>
+            <displayName>Core SK</displayName>
+            <downloadUrl>https://github.com/skyarkhangel/Hardcore-SK</downloadUrl>
+        </li>
+    </modDependencies>
+</ModMetaData>

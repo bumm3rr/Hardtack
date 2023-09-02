@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+
+    <ThingDef ParentName="SK_MealBase">
+        <defName>Hardtack</defName>
+        <label>Hardtack</label>
+        <description>Bread baked into a hard biscuit meant to last for long periods of time without going bad. Not too tasty, though.</description>
+        <graphicData>
+            <texPath>Things/Item/Meal/Hardtack</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <thingCategories>
+            <li>Preserves</li>
+        </thingCategories>
+        <statBases>
+            <DeteriorationRate>10</DeteriorationRate>
+            <MarketValue>2</MarketValue>
+            <WorkToMake>300</WorkToMake>
+            <Bulk>0.05</Bulk>
+            <Mass>0.018</Mass>
+            <Flammability>0.5</Flammability>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <stackLimit>200</stackLimit>
+        <ingestible>
+            <preferability>MealAwful</preferability>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+            <maxNumToIngestAtOnce>16</maxNumToIngestAtOnce>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>20</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_MealBase">
+        <defName>TwiceBakedHardtack</defName>
+        <label>Twice Baked Hardtack</label>
+        <description>Bread baked into a hard biscuit meant to last for long periods of time without going bad. Not too tasty, though. This one has been baked a second time to increase shelf life, though its not as pleasant to eat and has worse nutrition</description>
+        <graphicData>
+            <texPath>Things/Item/Meal/Hardtack2x</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <thingCategories>
+            <li>Preserves</li>
+        </thingCategories>
+        <statBases>
+            <DeteriorationRate>7.5</DeteriorationRate>
+            <MarketValue>1.6</MarketValue>
+            <WorkToMake>300</WorkToMake>
+            <Bulk>0.05</Bulk>
+            <Mass>0.018</Mass>
+            <Flammability>0.35</Flammability>
+            <Nutrition>0.04</Nutrition>
+        </statBases>
+        <stackLimit>200</stackLimit>
+        <ingestible>
+            <tasteThought>AteTwiceBakedHardtack</tasteThought>
+            <preferability>MealAwful</preferability>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+            <maxNumToIngestAtOnce>16</maxNumToIngestAtOnce>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>40</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_MealBase">
+        <defName>ThriceBakedHardtack</defName>
+        <label>Thrice Baked Hardtack</label>
+        <description>Bread baked into a hard biscuit meant to last for long periods of time without going bad. Not too tasty, though. This one has been baked three times. It lasts a long time, but it's closer to a rock than a piece of bread.</description>
+        <graphicData>
+            <texPath>Things/Item/Meal/Hardtack3x</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <thingCategories>
+            <li>Preserves</li>
+        </thingCategories>
+        <statBases>
+            <DeteriorationRate>5</DeteriorationRate>
+            <MarketValue>1</MarketValue>
+            <WorkToMake>300</WorkToMake>
+            <Bulk>0.05</Bulk>
+            <Mass>0.018</Mass>
+            <Flammability>0.2</Flammability>
+            <Nutrition>0.03</Nutrition>
+        </statBases>
+        <stackLimit>200</stackLimit>
+        <ingestible>
+            <tasteThought>AteThriceBakedHardtack</tasteThought>
+            <preferability>MealAwful</preferability>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+            <maxNumToIngestAtOnce>16</maxNumToIngestAtOnce>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>60</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>
