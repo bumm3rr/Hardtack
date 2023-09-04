@@ -22,14 +22,14 @@
             <Bulk>0.05</Bulk>
             <Mass>0.018</Mass>
             <Flammability>0.5</Flammability>
-            <Nutrition>0.05</Nutrition>
+            <Nutrition>0.07</Nutrition>
         </statBases>
         <stackLimit>200</stackLimit>
         <ingestible>
             <preferability>MealAwful</preferability>
             <ingestEffect>EatVegetarian</ingestEffect>
             <ingestSound>Meal_Eat</ingestSound>
-            <maxNumToIngestAtOnce>16</maxNumToIngestAtOnce>
+            <maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
         </ingestible>
         <comps>
             <li Class="CompProperties_Rottable">
@@ -57,7 +57,7 @@
             <Bulk>0.05</Bulk>
             <Mass>0.018</Mass>
             <Flammability>0.35</Flammability>
-            <Nutrition>0.04</Nutrition>
+            <Nutrition>0.06</Nutrition>
         </statBases>
         <stackLimit>200</stackLimit>
         <ingestible>
@@ -65,7 +65,7 @@
             <preferability>MealAwful</preferability>
             <ingestEffect>EatVegetarian</ingestEffect>
             <ingestSound>Meal_Eat</ingestSound>
-            <maxNumToIngestAtOnce>16</maxNumToIngestAtOnce>
+            <maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
         </ingestible>
         <comps>
             <li Class="CompProperties_Rottable">
@@ -93,7 +93,7 @@
             <Bulk>0.05</Bulk>
             <Mass>0.018</Mass>
             <Flammability>0.2</Flammability>
-            <Nutrition>0.03</Nutrition>
+            <Nutrition>0.05</Nutrition>
         </statBases>
         <stackLimit>200</stackLimit>
         <ingestible>
@@ -101,7 +101,7 @@
             <preferability>MealAwful</preferability>
             <ingestEffect>EatVegetarian</ingestEffect>
             <ingestSound>Meal_Eat</ingestSound>
-            <maxNumToIngestAtOnce>16</maxNumToIngestAtOnce>
+            <maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
         </ingestible>
         <comps>
             <li Class="CompProperties_Rottable">

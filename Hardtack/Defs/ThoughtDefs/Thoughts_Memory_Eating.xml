@@ -2,7 +2,7 @@
 
 <Defs>
 
-    <ThoughtDef>
+    <!-- <ThoughtDef>
         <defName>AteHardtack</defName>
         <thoughtClass>Thought_FoodEaten</thoughtClass>
         <showBubble>false</showBubble>
@@ -11,22 +11,22 @@
             <li>
                 <label>ate twice baked hardtack</label>
                 <description>It's not the worst, but I would prefer something fresh.</description>
-                <baseMoodEffect>-1</baseMoodEffect>
+                
             </li>
         </stages>
-    </ThoughtDef>
+    </ThoughtDef> -->
 
     <ThoughtDef>
         <defName>AteTwiceBakedHardtack</defName>
         <thoughtClass>Thought_FoodEaten</thoughtClass>
         <showBubble>true</showBubble>
         <icon>Things/Mote/ThoughtSymbol/Food</icon>
-        <durationDays>0.75</durationDays>
+        <durationDays>0.5</durationDays>
         <stages>
             <li>
                 <label>ate twice baked hardtack</label>
                 <description>It's so hard I might break my teeth trying to bite it.</description>
-                <baseMoodEffect>-2</baseMoodEffect>
+                <baseMoodEffect>-1</baseMoodEffect>
             </li>
         </stages>
     </ThoughtDef>
@@ -36,12 +36,12 @@
         <thoughtClass>Thought_FoodEaten</thoughtClass>
         <showBubble>true</showBubble>
         <icon>Things/Mote/ThoughtSymbol/Food</icon>
-        <durationDays>1</durationDays>
+        <durationDays>0.5</durationDays>
         <stages>
             <li>
                 <label>ate thrice baked hardtack</label>
                 <description>I need a hammer just to get a piece off of this thing.</description>
-                <baseMoodEffect>-3</baseMoodEffect>
+                <baseMoodEffect>-2</baseMoodEffect>
             </li>
         </stages>
     </ThoughtDef>
