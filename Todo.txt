@@ -9,3 +9,5 @@ Not sure how much bulk/mass it should have. Just need to play with it more.
 Figure out how to make the Bread Oven collapse into the Architect > Production > Prepare Food menu instead of being a separate button in the Production menu. 
 
 Need to do some pixel adjustments on graphics to make them look nicer.
+
+Probably increase capacity/recipe time so that you dont need to spam a bunch of buildings.
