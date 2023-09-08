@@ -77,7 +77,7 @@
         </products>
         <slotsRequired>4</slotsRequired>
     </RecipeDef>
-
+<!-- 
     <RecipeDef ParentName="Make_HardtackBase" Class="UniversalFermenterSK.RecipeDef_UF">
         <defName>Make_Twice_Baked_Hardtack</defName>
         <label>Make Twice Baked Hardtack</label>
@@ -156,5 +156,5 @@
         </products>
         <slotsRequired>4</slotsRequired>
     </RecipeDef>
-    
+     -->
 </Defs>

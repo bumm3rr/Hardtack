@@ -48,7 +48,7 @@
     <showProductIcon>true</showProductIcon>
     <barOffset>(0.0, 0.25)</barOffset>
     <barScale>(1.0, 1.0)</barScale>
-    <slotsCount>4</slotsCount>
+    <slotsCount>8</slotsCount>
     <comps>
         <li Class="CompProperties_Forbiddable"/>
         <li Class="CompProperties_Flickable"/>
