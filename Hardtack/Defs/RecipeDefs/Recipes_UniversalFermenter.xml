@@ -18,7 +18,7 @@
             <min>-275</min>
             <max>1000</max>
         </temperatureIdeal>
-        <processDays>0.5</processDays>
+        <processDays>0.4</processDays>
         <speedBelowSafe>0</speedBelowSafe>
         <speedAboveSafe>0</speedAboveSafe>
     </RecipeDef>
